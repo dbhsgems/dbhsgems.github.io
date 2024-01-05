@@ -1,0 +1,131 @@
+body {
+  font-family: 'Smoothy';
+  background-color: #FEFFCC;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Update the .star class */
+.star {
+  position: absolute;
+  pointer-events: none;
+  transition: opacity 0.1s ease-in-out;
+  filter: drop-shadow(0 0 2px yellow); /* Add a glowing effect */
+  animation: bounceRotateStar 0.7s ease-in-out forwards; /* Add a combined animation */
+}
+
+@keyframes bounceRotateStar {
+  0%, 100% {
+    transform: scale(0.5) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(40deg);
+  }
+
+}
+
+.star img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+header {
+  height: 4.8rem;
+  background-color: #FEFFDB;
+  border-bottom: #E8AEAA solid .2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* Ensures header stays on top of other content */
+  color: #E8AEAA;
+  font-size: 1.5rem;
+}
+
+#title{
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+}
+
+.pic {
+  margin-top: 5rem; /* Margin to account for the fixed header height */
+  text-align: center;
+}
+
+.lines {
+  max-width: 100%;
+  max-height: calc(100vh); /* Adjusts image height based on header height */
+  top:50%;
+  left:50%;
+  width: auto;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Smoothy';
+  src: url('SmothyBubble-d9D06.otf');
+}
+
+.title {
+  font-size: 25rem;
+  letter-spacing: 1rem;
+  z-index: 2;
+  top:5%;
+  left:8%;
+  position: fixed;
+  color: #944C51;
+}
+
+#vertical{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 10rem; /* Adjust the font size for smaller screens */
+    top:20%;
+    left:8.5%;
+  }
+  #horizontal{
+    display: none;
+  }
+  #vertical{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 7rem; /* Adjust the font size for smaller screens */
+    top:20%;
+    left:8.5%;
+    letter-spacing: 0;
+  }
+  #horizontal{
+    display: none;
+  }
+  #vertical{
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 7rem; /* Adjust the font size for smaller screens */
+    top:20%;
+    left:8.5%;
+    letter-spacing: 0;
+  }
+  #horizontal{
+    display: none;
+  }
+  #vertical{
+    display: none;
+  }
+  #tablet{
+    display: block;
+  }
+}
