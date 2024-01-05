@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const star = document.createElement("div");
       star.classList.add("star");
       const starSize = 50; // Adjust the size of the star element if needed
-      star.style.left = `${event.clientX - starSize - 50}px`; // Set left position at cursor X coordinate
-      star.style.top = `${event.clientY - starSize - 50}px`; // Set top position at cursor Y coordinate
+      star.style.left = `${event.clientX - starSize - 85}px`; // Set left position at cursor X coordinate
+      star.style.top = `${event.clientY - starSize - 63}px`; // Set top position at cursor Y coordinate
       star.style.zIndex = "9999"; 
       document.body.appendChild(star);
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Reset the flag after 1 second to allow the appearance of another star
       setTimeout(() => {
         starPresent = false;
-      }, 600);
+      }, 400);
 
       // Remove the star after animation completes
       setTimeout(() => {
