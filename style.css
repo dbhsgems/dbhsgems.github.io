@@ -128,10 +128,11 @@ a:hover {
 
 
 .title {
-  font-size: 20rem;
+  font-size: 30vh;
+  font-size: 17vw;
   letter-spacing: 1rem;
   z-index: 2;
-  top:2vh;
+  top:-1vh;
   left:5vw;
   position: absolute;
   color: #944C51;
@@ -183,7 +184,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .title {
     font-size: 7rem; /* Adjust the font size for smaller screens */
     top:10vh;
@@ -240,7 +241,7 @@ a:hover {
 @media (min-width: 1050px) and (max-width: 1280px) {
   .title {
     font-size: 15rem; /* Adjust the font size for smaller screens */
-    top:2vh;
+    top:-1vh;
     left:5vw;
     letter-spacing: 0;
   }
