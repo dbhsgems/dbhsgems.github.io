@@ -128,7 +128,7 @@ a:hover {
 
 
 .title {
-  font-size: 25rem;
+  font-size: 20rem;
   letter-spacing: 1rem;
   z-index: 2;
   top:2vh;
@@ -141,18 +141,23 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
   .title {
     font-size: 10rem; /* Adjust the font size for smaller screens */
-    top:20%;
-    left:8.5%;
+    top:2vh;
+    left:5vw;
   }
+
   #horizontal{
     display: none;
   }
   #vertical{
+    display: none;
+  }
+  #tablet{
     display: block;
   }
+
 
   a {
     text-decoration: none;
@@ -178,11 +183,11 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .title {
     font-size: 7rem; /* Adjust the font size for smaller screens */
-    top:20%;
-    left:8.5%;
+    top:10vh;
+    left:5vw;
     letter-spacing: 0;
   }
   #horizontal{
@@ -232,11 +237,11 @@ a:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1050px) and (max-width: 1280px) {
   .title {
-    font-size: 7rem; /* Adjust the font size for smaller screens */
-    top:20%;
-    left:8.5%;
+    font-size: 15rem; /* Adjust the font size for smaller screens */
+    top:2vh;
+    left:5vw;
     letter-spacing: 0;
   }
 
@@ -263,13 +268,4 @@ a:hover {
     gap: 5rem;
   }
 
-  #horizontal{
-    display: none;
-  }
-  #vertical{
-    display: none;
-  }
-  #tablet{
-    display: block;
-  }
 }
