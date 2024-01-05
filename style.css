@@ -57,6 +57,10 @@ header {
   margin-top: -1.3rem;
 }
 
+.navbar .nerd{
+  margin-left: -1rem;
+}
+
 .navbar .links {
   display: flex;
   gap: 10rem;
@@ -188,25 +192,35 @@ a:hover {
     display: block;
   }
 
+  .navbar .nerd {
+    object-fit: cover;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .navbar{
+    padding-top:1rem;
+  }
   a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     color: #E8AEAA;
   }
 
   .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    margin-left: -3rem;
   }
 
   .action_btn {
     background-color: #FFDAB9;
     border: 2px solid #f5ba87 ;
     color: #E8AEAA;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     outline: none;
     border-radius: 20px;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: scale 0.2 ease;
   }
