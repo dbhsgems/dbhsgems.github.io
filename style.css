@@ -6,6 +6,10 @@
 body {
   font-family: 'Smoothy';
   background-color: #FEFFCC;
+  background-image: url("gems-background.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   margin: 0;
   height: 100vh;
   overflow: hidden;
@@ -15,8 +19,13 @@ body {
 .star {
   position: absolute;
   pointer-events: none;
+  opacity: 0;
   transition: opacity 0.1s ease-in-out;
   animation: bounceRotateStar 0.7s ease-in-out forwards; /* Add a combined animation */
+}
+
+.star.visible {
+  opacity: 1;
 }
 
 @keyframes bounceRotateStar {
@@ -120,11 +129,6 @@ a:hover {
   color: #e6958f;
 }
 
-.lines {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
 
 
 .title {
@@ -138,25 +142,18 @@ a:hover {
   color: #944C51;
 }
 
-#vertical{
-  display: none;
-}
 
 @media screen and (max-width: 1050px) {
+  body{
+    background-image: url("gems-background-long.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
   .title {
     font-size: 10rem; /* Adjust the font size for smaller screens */
     top:2vh;
     left:5vw;
-  }
-
-  #horizontal{
-    display: none;
-  }
-  #vertical{
-    display: none;
-  }
-  #tablet{
-    display: block;
   }
 
 
@@ -185,17 +182,16 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  body{
+    background-image: url("gems-background-longer.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  }
+  
   .title {
     font-size: 7rem; /* Adjust the font size for smaller screens */
-    top:10vh;
-    left:5vw;
     letter-spacing: 0;
-  }
-  #horizontal{
-    display: none;
-  }
-  #vertical{
-    display: block;
   }
 
   .navbar .nerd {
