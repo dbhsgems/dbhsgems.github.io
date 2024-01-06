@@ -150,9 +150,11 @@ a:hover {
 }
 
 .slogan {
-  font-size: 5rem;
+  font-size: 3rem;
+  font-family:Georgia;
   color: #8f5054;
-  transform: translateY(-28rem);
+  transform: translateY(-25rem);
+  margin-left:2rem;
 }
 
 
@@ -170,8 +172,8 @@ a:hover {
   }
   
   .slogan{
-    font-size: 5rem;
-    transform: translateY(-18rem);
+    font-size: 2rem;
+    transform: translateY(-15rem);
   }
   
   .dbhs{
@@ -209,6 +211,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
   }
   
   .title {
@@ -218,8 +221,9 @@ a:hover {
   }
   
   .slogan{
-    font-size: 4.5rem;
-    transform: translateY(-12rem);
+    font-size: 2rem;
+    width:20rem;
+    transform: translateY(-8rem);
   }
   
   .dbhs{
@@ -274,7 +278,7 @@ a:hover {
   }
   
   .slogan{
-    font-size: 5rem;
+    font-size: 2rem;
     transform: translateY(-18rem);
   }
   
