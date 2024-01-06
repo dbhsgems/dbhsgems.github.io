@@ -9,7 +9,7 @@ body {
   background-image: url("assets/gems-background.PNG");
   background-size: cover;
   background-repeat: no-repeat;
-
+overflow: hidden;
   margin: 0;
   height: 100vh;
 }
