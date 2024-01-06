@@ -217,13 +217,14 @@ a:hover {
   .title {
     font-size: 6rem; 
     transform: translateY(-3rem);
-    word-spacing: -1rem;
+    letter-spacing: -1px;
   }
   
   .slogan{
     font-size: 2rem;
     width:20rem;
     transform: translateY(-8rem);
+    margin-left: -1px;
   }
   
   .dbhs{
