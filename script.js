@@ -2,25 +2,24 @@ let starPresent = false; // Variable to track if a star is present
 
 document.addEventListener("DOMContentLoaded", function() {
   document.body.addEventListener("click", function(event) {
-    if (!starPresent) { 
+    if (!starPresent) { // Check if a star is already present
       const star = document.createElement("div");
       star.classList.add("star");
-      star.classList.add("visible")
-      const starSize = 50; 
-      star.style.left = `${event.clientX - starSize - 85}px`; 
-      star.style.top = `${event.clientY - starSize - 63}px`; 
+      const starSize = 50; // Adjust the size of the star element if needed
+      star.style.left = `${event.clientX - starSize - 85}px`; // Set left position at cursor X coordinate
+      star.style.top = `${event.clientY - starSize - 63}px`; // Set top position at cursor Y coordinate
       star.style.zIndex = "9999"; 
       document.body.appendChild(star);
 
       const img = document.createElement("img");
       img.src = "star.png";
+      img.alt = "Star Image";
       star.appendChild(img);
 
       starPresent = true; // Set flag to indicate the star is present
 
       // Reset the flag after 1 second to allow the appearance of another star
       setTimeout(() => {
-        star.classList.remove('visible');
         starPresent = false;
       }, 400);
 
