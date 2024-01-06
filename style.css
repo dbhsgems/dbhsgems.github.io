@@ -6,7 +6,7 @@
 body {
   font-family: 'Smoothy';
   background-color: #FEFFCC;
-  background-image: url("gems-background.PNG");
+  background-image: url("assets/gems-background.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -57,7 +57,6 @@ header {
 }
 
 .navbar {
-  max-width: 100%;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -145,7 +144,7 @@ a:hover {
 
 @media screen and (max-width: 1050px) {
   body{
-    background-image: url("gems-background-long.PNG");
+    background-image: url("assets/gems-background-long.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   }
@@ -183,7 +182,7 @@ a:hover {
 
 @media screen and (max-width: 500px) {
   body{
-    background-image: url("gems-background-longer.PNG");
+    background-image: url("assets/gems-background-longer.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
