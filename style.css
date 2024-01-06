@@ -12,7 +12,6 @@ body {
 
   margin: 0;
   height: 100vh;
-  overflow: hidden;
 }
 
 /* Update the .star class */
@@ -129,16 +128,31 @@ a:hover {
 }
 
 
+.container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+}
 
 .title {
-  font-size: 30vh;
-  font-size: 17vw;
+  font-size: 15rem;
   letter-spacing: 1rem;
   z-index: 2;
-  top:-1vh;
-  left:5vw;
-  position: absolute;
   color: #944C51;
+  transform: translateY(-12rem);
+}
+
+.dbhs {
+  font-size: 5rem;
+  color: #8f5054;
+  transform: translateY(5rem);
+}
+
+.slogan {
+  font-size: 5rem;
+  color: #8f5054;
+  transform: translateY(-28rem);
 }
 
 
@@ -148,13 +162,22 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   }
-  
-  .title {
-    font-size: 10rem; /* Adjust the font size for smaller screens */
-    top:2vh;
-    left:5vw;
-  }
 
+
+  .title {
+    font-size: 10rem; 
+    transform: translateY(-7rem);
+  }
+  
+  .slogan{
+    font-size: 5rem;
+    transform: translateY(-18rem);
+  }
+  
+  .dbhs{
+    font-size: 5rem;
+    transform: translateY(5rem);
+  }
 
   a {
     text-decoration: none;
@@ -180,7 +203,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   body{
     background-image: url("assets/gems-background-longer.PNG");
   background-size: cover;
@@ -189,8 +212,19 @@ a:hover {
   }
   
   .title {
-    font-size: 7rem; /* Adjust the font size for smaller screens */
-    letter-spacing: 0;
+    font-size: 6rem; 
+    transform: translateY(-3rem);
+    word-spacing: -1rem;
+  }
+  
+  .slogan{
+    font-size: 4.5rem;
+    transform: translateY(-12rem);
+  }
+  
+  .dbhs{
+    font-size: 4.5rem;
+    transform: translateY(5rem);
   }
 
   .navbar .nerd {
@@ -235,10 +269,18 @@ a:hover {
 
 @media (min-width: 1050px) and (max-width: 1280px) {
   .title {
-    font-size: 15rem; /* Adjust the font size for smaller screens */
-    top:-1vh;
-    left:5vw;
-    letter-spacing: 0;
+    font-size: 12rem; 
+    transform: translateY(-8rem);
+  }
+  
+  .slogan{
+    font-size: 5rem;
+    transform: translateY(-18rem);
+  }
+  
+  .dbhs{
+    font-size: 5rem;
+    transform: translateY(5rem);
   }
 
   a {
