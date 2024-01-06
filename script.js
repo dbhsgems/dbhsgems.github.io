@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.appendChild(star);
 
       const img = document.createElement("img");
-      img.src = "assets/star.png";
+      img.src = "assets/star.PNG";
       star.appendChild(img);
 
       starPresent = true; // Set flag to indicate the star is present
