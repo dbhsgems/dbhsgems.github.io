@@ -3,6 +3,13 @@
   src: url('SmothyBubble-d9D06.otf');
 }
 
+@font-face {
+  font-family: 'Noteworthy Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Noteworthy Light'), url('Noteworthy-Lt.woff') format('woff');
+  }
+
 body {
   font-family: 'Smoothy';
   background-color: #FEFFCC;
@@ -182,7 +189,7 @@ a:hover {
 
 .slogan {
   font-size: 3rem;
-  font-family:Georgia;
+  font-family:"Noteworthy Light";
   color: #8f5054;
   transform: translateY(-19rem);
 }
@@ -190,7 +197,7 @@ a:hover {
 
 .slogan2{
   font-size: 2rem;
-  font-family:Georgia;
+  font-family:"Noteworthy Light";
   color: #8f5054;
   transform: translateY(-25rem);
   display: flex;

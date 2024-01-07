@@ -3,6 +3,13 @@
   src: url('SmothyBubble-d9D06.otf');
 }
 
+@font-face {
+  font-family: 'Noteworthy Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Noteworthy Light'), url('Noteworthy-Lt.woff') format('woff');
+  }
+
 body {
   background-color: #FEFFCC;
 }
@@ -46,14 +53,13 @@ html::-webkit-scrollbar-track:hover {
 }
 
 .container {
-  margin-top: 5rem;
-  display: flex;
+  margin-top: 2rem;
+  display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
 }
 
 h1 {
@@ -72,69 +78,52 @@ h1 {
   letter-spacing: 0.2rem;
 }
 
-h2 {
-  color: #E8AEAA;
-  text-shadow: black 2px 2px 2px;
-  font-family: 'Smoothy';
-  letter-spacing: 0.2rem;
-  margin: 0;
-  margin-top: 1rem;
-  padding-top: 10px;
-  padding-bottom: 3px;
-  box-sizing: border-box;
-  text-align: center;
+h2{
+  font-family:"Noteworthy Light" ;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #de7178;
+}
+.info{
+  max-width: 40rem;
+  margin-top:-2rem;
 }
 
-h3{
-  color: #E8AEAA;
-  text-shadow: black 1px 1px 1px;
-  font-family: 'Smoothy';
-  letter-spacing: 0.2rem;
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 3px;
-  box-sizing: border-box;
-  text-align: center;
+.insta{
+  max-width: 30rem;
 }
 
-.creator:hover .person {
-  transform: scale(1.2);
-  opacity: 1;
+@media screen and (max-width: 1280px) {
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .info{
+    max-width: 28rem;
+  }
 }
 
-.person {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border: 2px solid #E8AEAA;
-  border-radius: 4px;
-  transition: opacity 0.6s, transform 0.3s;
-  opacity: .8;
-}
+@media screen and (max-width: 800px) {
+  h2{
+    font-size: 1.5rem;
+  }
 
-.container{
-  display: flex;
-  justify-content: space-around;
+  .info{
+    max-width: 20rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-h1{
-  font-size: 2rem;
-}
+  h2{
+    text-align: center;
+  }
 
-.nav{
-  max-width: 5rem;
-}
+  h1{
+    font-size: 2rem;
+  }
+  
+  .nav{
+    max-width: 5rem;
+  }
 
-.container {
-  margin-top: 2rem;
-}
-
-h2{
-  margin-top: -0.5rem;
-}
-
-h3{
-  margin-bottom: 2rem;
-}
 }
