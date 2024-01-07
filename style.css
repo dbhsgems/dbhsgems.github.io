@@ -45,23 +45,21 @@ overflow: hidden;
 
 
 header {
-  max-height: 6rem;
   background-color: #FEFFDB;
+  padding: 0 2rem;
   border-bottom: #E8AEAA solid .2rem;
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
   z-index: 100; 
-  color: #E8AEAA;
 }
 
 .navbar {
-  max-width: 100%;
+  min-height: 60px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: -1.3rem;
 }
 
 .navbar .nerd{
@@ -89,6 +87,7 @@ header {
   color: #E8AEAA;
   cursor: pointer;
   display: none;
+  font-size: 1.5rem;
 }
 
 .action_btn {
@@ -114,12 +113,14 @@ header {
 
 li {
   list-style: none;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   font-size: 2rem;
   color: #E8AEAA;
+  text-align: center;
 }
 
 /* Global link styles */
@@ -127,12 +128,42 @@ a:hover {
   color: #e6958f;
 }
 
+.dropdown_menu {
+  display: none;
+  width: 100%;
+  height: 0;
+  background-color: #f6f7d1;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 180px;
+}
+
+.dropdown_menu li {
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  margin-left:27%;
+  width: 40%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
 
 .container {
-  position: relative;
+  justify-content: center;
   text-align: center;
   display: flex;
-  flex-flow: column;
+  height:100vh;
+  flex-direction: column;
 }
 
 .title {
@@ -140,7 +171,7 @@ a:hover {
   letter-spacing: 1rem;
   z-index: 2;
   color: #944C51;
-  transform: translateY(-12rem);
+  transform: translateY(-11rem);
 }
 
 .dbhs {
@@ -153,8 +184,18 @@ a:hover {
   font-size: 3rem;
   font-family:Georgia;
   color: #8f5054;
+  transform: translateY(-23rem);
+}
+
+
+.slogan2{
+  font-size: 2rem;
+  font-family:Georgia;
+  color: #8f5054;
   transform: translateY(-25rem);
-  margin-left:2rem;
+  display: flex;
+  justify-content: center;
+  word-spacing: 0.5rem;
 }
 
 
@@ -168,17 +209,22 @@ a:hover {
 
   .title {
     font-size: 10rem; 
-    transform: translateY(-7rem);
+    transform: translateY(-10rem);
   }
   
   .slogan{
     font-size: 2rem;
-    transform: translateY(-15rem);
+    transform: translateY(-17rem);
+  }
+
+  .slogan2{
+    font-size: 1.5rem;
+    transform: translateY(-18.5rem);
   }
   
   .dbhs{
     font-size: 5rem;
-    transform: translateY(5rem);
+    transform: translateY(0rem);
   }
 
   a {
@@ -211,25 +257,64 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   }
   
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    max-width: 100%;
+    min-height: 60px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15rem;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  .dropdown_menu .links{
+    margin-left:-3rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+
   .title {
     font-size: 6rem; 
-    transform: translateY(-3rem);
+    transform: translateY(-5rem);
     letter-spacing: -1px;
   }
   
   .slogan{
     font-size: 2rem;
-    width:20rem;
-    transform: translateY(-8rem);
+    transform: translateY(-9rem);
     margin-left: -1px;
+  }
+
+  .slogan2{
+    font-size: 1.5rem;
+    transform: translateY(-10rem);
+    word-spacing: 0.5rem;
+  }
+
+  .slogan{
+    font-size: 1.5rem;
   }
   
   .dbhs{
     font-size: 4.5rem;
-    transform: translateY(5rem);
+    transform: translateY(0rem);
   }
 
   .navbar .nerd {
@@ -237,20 +322,11 @@ a:hover {
     height: 5rem;
     width: 5rem;
   }
-
-  .navbar{
-    padding-top:1rem;
-  }
+  
   a {
     text-decoration: none;
     font-size: 0.8rem;
     color: #E8AEAA;
-  }
-
-  .navbar .links {
-    display: flex;
-    gap: 1rem;
-    margin-left: -3rem;
   }
 
   .action_btn {
@@ -270,22 +346,30 @@ a:hover {
     height: 40%;
     object-fit: contain;
   }
+
+  body{
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1050px) and (max-width: 1280px) {
   .title {
     font-size: 12rem; 
-    transform: translateY(-8rem);
+    transform: translateY(-11rem);
   }
   
   .slogan{
     font-size: 2rem;
-    transform: translateY(-18rem);
+    transform: translateY(-20rem);
   }
   
+  .slogan2{
+    font-size: 1.5rem;
+    transform: translateY(-21rem);
+  }
   .dbhs{
     font-size: 5rem;
-    transform: translateY(5rem);
+    transform: translateY(0rem);
   }
 
   a {
