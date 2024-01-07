@@ -292,19 +292,19 @@ a:hover {
 
   .title {
     font-size: 6rem; 
-    transform: translateY(-5rem);
+    transform: translateY(-7.5rem);
     letter-spacing: -1px;
   }
   
   .slogan{
     font-size: 2rem;
-    transform: translateY(-9rem);
+    transform: translateY(-10.5rem);
     margin-left: -1px;
   }
 
   .slogan2{
     font-size: 1.5rem;
-    transform: translateY(-10rem);
+    transform: translateY(-12rem);
     word-spacing: 0.5rem;
   }
 
@@ -314,7 +314,7 @@ a:hover {
   
   .dbhs{
     font-size: 4.5rem;
-    transform: translateY(0rem);
+    transform: translateY(-1rem);
   }
 
   .navbar .nerd {
