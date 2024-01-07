@@ -171,20 +171,20 @@ a:hover {
   letter-spacing: 1rem;
   z-index: 2;
   color: #944C51;
-  transform: translateY(-11rem);
+  transform: translateY(-6rem);
 }
 
 .dbhs {
   font-size: 5rem;
   color: #8f5054;
-  transform: translateY(5rem);
+  transform: translateY(10rem);
 }
 
 .slogan {
   font-size: 3rem;
   font-family:Georgia;
   color: #8f5054;
-  transform: translateY(-23rem);
+  transform: translateY(-19rem);
 }
 
 
@@ -195,7 +195,7 @@ a:hover {
   transform: translateY(-25rem);
   display: flex;
   justify-content: center;
-  word-spacing: 0.5rem;
+  transform: translateY(-22.5rem);
 }
 
 
@@ -209,22 +209,22 @@ a:hover {
 
   .title {
     font-size: 10rem; 
-    transform: translateY(-10rem);
+    transform: translateY(-9rem);
   }
   
   .slogan{
     font-size: 2rem;
-    transform: translateY(-17rem);
+    transform: translateY(-17.5rem);
   }
 
   .slogan2{
     font-size: 1.5rem;
-    transform: translateY(-18.5rem);
+    transform: translateY(-19rem);
   }
   
   .dbhs{
     font-size: 5rem;
-    transform: translateY(0rem);
+    transform: translateY(3rem);
   }
 
   a {
@@ -355,21 +355,21 @@ a:hover {
 @media (min-width: 1050px) and (max-width: 1280px) {
   .title {
     font-size: 12rem; 
-    transform: translateY(-11rem);
+    transform: translateY(-8.5rem);
   }
   
   .slogan{
     font-size: 2rem;
-    transform: translateY(-20rem);
+    transform: translateY(-18rem);
   }
   
   .slogan2{
     font-size: 1.5rem;
-    transform: translateY(-21rem);
+    transform: translateY(-20.5rem);
   }
   .dbhs{
     font-size: 5rem;
-    transform: translateY(0rem);
+    transform: translateY(5rem);
   }
 
   a {
